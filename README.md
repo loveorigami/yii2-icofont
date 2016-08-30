@@ -1,9 +1,11 @@
-Yii 2 [IcoFont](http://icofont.com) Asset Bundle
-==============================
+# Yii 2 [IcoFont](http://icofont.com) Asset Bundle
+[![Latest Stable Version](https://poser.pugx.org/loveorigami/yii2-icofont/v/stable)](https://packagist.org/packages/loveorigami/yii2-icofont)
+[![Total Downloads](https://poser.pugx.org/loveorigami/yii2-icofont/downloads)](https://packagist.org/packages/loveorigami/yii2-icofont)
+[![License](https://poser.pugx.org/loveorigami/yii2-icofont/license)](https://packagist.org/packages/loveorigami/yii2-icofont)
+
 This extension provides a assets bundle with IcoFont for Yii framework 2.0 applications and helper to use icons.
 
-Installation
-------------
+## Installation
 
 The preferred way to install this extension is through [composer](https://getcomposer.org/).
 
@@ -21,14 +23,12 @@ or add
 
 to the `require` section of your `composer.json` file.
 
-Usage
------
+## Usage
 
 In view
 
 ```php
 lo\icofont\IcoFontAsset::register($this);
-
 ```
 
 or as dependency in your main application asset bundle
@@ -43,7 +43,6 @@ class AppAsset extends AssetBundle
 		'lo\icofont\IcoFontAsset'
 	];
 }
-
 ```
 
 ## IcoHelper (IH) examples
