@@ -3,7 +3,8 @@
     "description": "Yii2 icofont",
     "type": "yii2-extension",
     "keywords": ["yii2","icofont"],
-    "license": "GPL-3.0+",
+	"version": "1.0",
+    "license": "MIT",
     "authors": [
 		{
             "name": "Andrey Lukyanov",
