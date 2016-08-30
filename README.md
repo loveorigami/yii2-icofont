@@ -46,10 +46,10 @@ class AppAsset extends AssetBundle
 
 ```
 
-## Helper examples
+## IcoHelper examples
 
 ```php
-use lo\icofont\IH; // IH = IcoHelper
+use lo\icofont\IH;
 
 // normal use
 echo IH::icon('home'); // <i class="icofont icofont-home"></i>
