@@ -9,11 +9,11 @@
 namespace lo\icofont;
 
 /**
- * Class IcoHelper
+ * Class FontIcoHelper (FI)
  * @package lo\icofont
  * @author Lukyanov Andrey <loveorigami@mail.ru>
  */
-class IH extends IcoFont
+class FI extends IcoFont
 {
     /**
      * Get all icon constants for dropdown list in example

@@ -45,36 +45,40 @@ class AppAsset extends AssetBundle
 }
 ```
 
-## IcoHelper (IH) examples
+## FontIcoHelper (FI) examples
 
 ```php
-use lo\icofont\IH;
+use lo\icofont\FI;
 
 // normal use
-echo IH::icon('home'); // <i class="icofont icofont-home"></i>
+echo FI::icon('home'); // <i class="icofont icofont-home"></i>
 
 // shortcut
-echo IH::i('home'); // <i class="icofont icofont-home"></i>
+echo FI::i('home'); // <i class="icofont icofont-home"></i>
 
 // icon with additional attributes
-echo IH::icon(
+echo FI::icon(
     'arrow-left', 
     ['class' => 'big', 'data-role' => 'arrow']
 ); // <i class="big icofont icofont-arrow-left" data-role="arrow"></i>
 
 // icon in button
 echo Html::submitButton(
-    Yii::t('app', '{icon} Save', ['icon' => IH::icon('check')])
+    Yii::t('app', '{icon} Save', ['icon' => FI::icon('check')])
 ); // <button type="submit"><i class="icofont icofont-check"></i> Save</button>
 
 // icon with additional methods
-echo IH::icon('arrow-right')->pullLeft();   // <i class="icofont icofont-arrow-right pull-left"></i>
-echo IH::icon('arrow-right')->pullRight();  // <i class="icofont icofont-arrow-right pull-right"></i>
+echo FI::icon('arrow-right')->pullLeft();   // <i class="icofont icofont-arrow-right pull-left"></i>
+echo FI::icon('arrow-right')->pullRight();  // <i class="icofont icofont-arrow-right pull-right"></i>
 
 // autocomplete icons name in IDE
-echo IH::icon(IH::_MAGIC);
-echo IH::icon(IH::_ARROW_RIGHT);
+echo FI::icon(FI::_MAGIC);
+echo FI::icon(FI::_ARROW_RIGHT);
 ```
+
+## See also
+
+* [FontAwesome](https://github.com/rmrevin/yii2-fontawesome)
 
 ## License
 

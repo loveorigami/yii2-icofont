@@ -8,7 +8,7 @@
 
 namespace lo\icofont\component;
 
-use lo\icofont\IH as IcoHelper;
+use lo\icofont\FI as IcoHelper;
 use yii\base\InvalidConfigException;
 use yii\helpers\Html;
 
