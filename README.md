@@ -3,7 +3,7 @@
 [![Total Downloads](https://poser.pugx.org/loveorigami/yii2-icofont/downloads)](https://packagist.org/packages/loveorigami/yii2-icofont)
 [![License](https://poser.pugx.org/loveorigami/yii2-icofont/license)](https://packagist.org/packages/loveorigami/yii2-icofont)
 
-This extension provides a assets bundle with IcoFont for Yii framework 2.0 applications and helper to use icons.
+This extension provides a assets bundle with [IcoFont](http://icofont.com) for Yii framework 2.0 applications and helper to use icons.
 
 ## Installation
 
