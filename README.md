@@ -46,6 +46,36 @@ class AppAsset extends AssetBundle
 
 ```
 
+## Helper examples
+
+```php
+use lo\icofont\IH; // IH = IcoHelper
+
+// normal use
+echo IH::icon('home'); // <i class="icofont icofont-home"></i>
+
+// shortcut
+echo IH::i('home'); // <i class="icofont icofont-home"></i>
+
+// icon with additional attributes
+echo FA::icon(
+    'arrow-left', 
+    ['class' => 'big', 'data-role' => 'arrow']
+); // <i class="big icofont icofont-arrow-left" data-role="arrow"></i>
+
+// icon in button
+echo Html::submitButton(
+    Yii::t('app', '{icon} Save', ['icon' => FA::icon('check')])
+); // <button type="submit"><i class="icofont icofont-check"></i> Save</button>
+
+// icon with additional methods
+echo FA::icon('arrow-right')->pullLeft();   // <i class="icofont icofont-arrow-right pull-left"></i>
+echo FA::icon('arrow-right')->pullRight();  // <i class="icofont icofont-arrow-right pull-right"></i>
+
+// autocomplete icons name in IDE
+echo IH::icon(FA::_MAGIC);
+echo IH::icon(FA::_ARROW_RIGHT);
+```
 
 ## License
 
