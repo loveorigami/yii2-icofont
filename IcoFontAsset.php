@@ -1,15 +1,13 @@
 <?php
-/**
- * AssetBundle.php
- * @author Lukyanov Andrey
- */
 namespace lo\icofont;
 
+use yii\web\AssetBundle;
+
 /**
- * Class AssetBundle
+ * Class IcoFontAsset
  * @package lo\icofont
  */
-class AssetBundle extends \yii\web\AssetBundle
+class IcoFontAsset extends AssetBundle
 {
     /**
      * @inherit
@@ -17,6 +15,7 @@ class AssetBundle extends \yii\web\AssetBundle
     public $css = [
         'css/icofont.css',
     ];
+
     /**
      * Initializes the bundle.
      * Set publish options to copy only necessary files (in this case css and font folders)
@@ -25,11 +24,11 @@ class AssetBundle extends \yii\web\AssetBundle
     public function init()
     {
         parent::init();
-		
+
         $this->publishOptions['beforeCopy'] = function ($from, $to) {
             return preg_match('%(/|\\\\)(fonts|css)%', $from);
         };
-		
-		$this->sourcePath = __DIR__."/assets";
+
+        $this->sourcePath = __DIR__ . "/assets";
     }
 }

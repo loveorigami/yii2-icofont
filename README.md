@@ -27,7 +27,7 @@ Usage
 In view
 
 ```php
-lo\icofont\AssetBundle::register($this);
+lo\icofont\IcoFontAsset::register($this);
 
 ```
 
@@ -40,7 +40,7 @@ class AppAsset extends AssetBundle
 
 	public $depends = [
 		// ...
-		'lo\icofont\AssetBundle'
+		'lo\icofont\IcoFontAsset'
 	];
 }
 
