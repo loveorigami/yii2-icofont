@@ -12,13 +12,13 @@ The preferred way to install this extension is through [composer](https://getcom
 Either run
 
 ```bash
-composer require "lo/yii2-icofont:*"
+composer require "loveorigami/yii2-icofont:*"
 ```
 
 or add
 
 ```
-"lo/yii2-icofont": "*",
+"loveorigami/yii2-icofont": "*",
 ```
 
 to the `require` section of your `composer.json` file.
