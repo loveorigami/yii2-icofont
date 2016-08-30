@@ -1,0 +1,22 @@
+{
+    "name": "loveorigami/yii2-icofont",
+    "description": "Yii2 icofont",
+    "type": "yii2-extension",
+    "keywords": ["yii2","icofont"],
+    "license": "GPL-3.0+",
+    "authors": [
+		{
+            "name": "Andrey Lukyanov",
+            "email": "loveorigami@mail.ru"
+        }
+    ],
+    "minimum-stability": "dev",
+    "require": {
+        "yiisoft/yii2": "2.*"
+    },
+    "autoload": {
+        "psr-4": {
+            "lo\\icofont\\": ""
+        }
+    }
+}
