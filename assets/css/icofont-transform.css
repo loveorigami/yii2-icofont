@@ -50,6 +50,13 @@
     left: -1.85714286em;
 }
 
+/*Pull*/
+.icofont-border {
+    padding: .2em .25em .15em;
+    border: solid 0.08em #eee;
+    border-radius: .1em;
+}
+
 /*Animation*/
 .icofont-spin {
     -webkit-animation: icofont-spin 2s infinite linear;

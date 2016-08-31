@@ -92,6 +92,14 @@ class Icon
     /**
      * @return self
      */
+    public function border()
+    {
+        return $this->addCssClass(FontIco::$cssPrefix . '-border');
+    }
+
+    /**
+     * @return self
+     */
     public function pullLeft()
     {
         return $this->addCssClass('pull-left');
