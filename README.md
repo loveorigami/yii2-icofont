@@ -45,7 +45,7 @@ class AppAsset extends AssetBundle
 }
 ```
 
-## FontIcoHelper (FI) examples
+## IcoFont (FI) helper examples
 
 ```php
 use lo\icofont\FI;
