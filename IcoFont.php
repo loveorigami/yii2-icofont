@@ -44,4 +44,14 @@ class IcoFont
     {
         return static::icon($name, $options);
     }
+
+    /**
+     * Size values
+     * @see component\Icon::size
+     */
+    const SIZE_LARGE = 'lg';
+    const SIZE_2X = '2x';
+    const SIZE_3X = '3x';
+    const SIZE_4X = '4x';
+    const SIZE_5X = '5x';
 }

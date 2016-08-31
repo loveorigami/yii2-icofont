@@ -8,7 +8,7 @@
 
 namespace lo\icofont\component;
 
-use lo\icofont\FI as IcoHelper;
+use lo\icofont\FI as FontIco;
 use yii\base\InvalidConfigException;
 use yii\helpers\Html;
 
@@ -34,9 +34,9 @@ class Icon
      */
     public function __construct($name, $options = [])
     {
-        Html::addCssClass($options, IcoHelper::$cssPrefix);
+        Html::addCssClass($options, FontIco::$cssPrefix);
         if (!empty($name)) {
-            Html::addCssClass($options, IcoHelper::$cssPrefix . '-' . $name);
+            Html::addCssClass($options, FontIco::$cssPrefix . '-' . $name);
         }
         $this->options = $options;
     }
@@ -65,6 +65,29 @@ class Icon
         return $this->addCssClass('pull-right');
     }
 
+    /**
+     * @param string $value
+     * @return self
+     * @throws InvalidConfigException
+     */
+    public function size($value)
+    {
+        return $this->addCssClass(
+            FontIco::$cssPrefix . '-' . $value,
+            in_array((string)$value, [
+                FontIco::SIZE_LARGE,
+                FontIco::SIZE_2X,
+                FontIco::SIZE_3X,
+                FontIco::SIZE_4X,
+                FontIco::SIZE_5X
+            ], true),
+            sprintf(
+                '%s - invalid value. Use one of the constants: %s.',
+                'FI::size()',
+                'FI::SIZE_LARGE, FI::SIZE_2X, FI::SIZE_3X, FI::SIZE_4X, FI::SIZE_5X'
+            )
+        );
+    }
 
     /**
      * Change html tag.

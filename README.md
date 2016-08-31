@@ -71,6 +71,11 @@ echo Html::submitButton(
 echo FI::icon('arrow-right')->pullLeft();   // <i class="icofont icofont-arrow-right pull-left"></i>
 echo FI::icon('arrow-right')->pullRight();  // <i class="icofont icofont-arrow-right pull-right"></i>
 
+// icon size
+echo FI::icon('cog')->size(FI::SIZE_3X);
+// values: FI::SIZE_LARGE, FI::SIZE_2X, FI::SIZE_3X, FI::SIZE_4X, FI::SIZE_5X
+// <i class="icofont icofont-cog icofont-size-3x"></i>
+
 // autocomplete icons name in IDE
 echo FI::icon(FI::_MAGIC);
 echo FI::icon(FI::_ARROW_RIGHT);

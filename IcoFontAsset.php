@@ -14,6 +14,7 @@ class IcoFontAsset extends AssetBundle
      */
     public $css = [
         'css/icofont.css',
+        'css/icofont-transform.css',
     ];
 
     /**
