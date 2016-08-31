@@ -39,9 +39,11 @@
     margin-left: 2.14285714em;
     list-style-type: none;
 }
-.icofont-ul>li {
+
+.icofont-ul > li {
     position: relative;
 }
+
 .icofont-li {
     position: absolute;
     left: -2.14285714em;
@@ -51,29 +53,45 @@
 }
 
 /*Animation*/
-.icofont-rotate {
-    -webkit-animation: icofont-rotate 2s infinite linear;
-    animation: icofont-rotate 2s infinite linear
+.icofont-rotate-90 {
+    -ms-filter: "progid:DXImageTransform.Microsoft.BasicImage(rotation=1)";
+    -webkit-transform: rotate(90deg);
+    -ms-transform: rotate(90deg);
+    transform: rotate(90deg);
 }
 
-@-webkit-keyframes icofont-rotate {
-    0% {
-        -webkit-transform: rotate(0deg);
-        transform: rotate(0deg)
-    }
-    100% {
-        -webkit-transform: rotate(359deg);
-        transform: rotate(359deg)
-    }
+.icofont-rotate-180 {
+    -ms-filter: "progid:DXImageTransform.Microsoft.BasicImage(rotation=2)";
+    -webkit-transform: rotate(180deg);
+    -ms-transform: rotate(180deg);
+    transform: rotate(180deg);
 }
 
-@keyframes icofont-rotate {
-    0% {
-        -webkit-transform: rotate(0deg);
-        transform: rotate(0deg)
-    }
-    100% {
-        -webkit-transform: rotate(359deg);
-        transform: rotate(359deg)
-    }
+.icofont-rotate-270 {
+    -ms-filter: "progid:DXImageTransform.Microsoft.BasicImage(rotation=3)";
+    -webkit-transform: rotate(270deg);
+    -ms-transform: rotate(270deg);
+    transform: rotate(270deg);
+}
+
+.icofont-flip-horizontal {
+    -ms-filter: "progid:DXImageTransform.Microsoft.BasicImage(rotation=0, mirror=1)";
+    -webkit-transform: scale(-1, 1);
+    -ms-transform: scale(-1, 1);
+    transform: scale(-1, 1);
+}
+
+.icofont-flip-vertical {
+    -ms-filter: "progid:DXImageTransform.Microsoft.BasicImage(rotation=2, mirror=1)";
+    -webkit-transform: scale(1, -1);
+    -ms-transform: scale(1, -1);
+    transform: scale(1, -1);
+}
+
+:root .icofont-rotate-90,
+:root .icofont-rotate-180,
+:root .icofont-rotate-270,
+:root .icofont-flip-horizontal,
+:root .icofont-flip-vertical {
+    filter: none;
 }

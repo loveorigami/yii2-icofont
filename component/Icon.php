@@ -90,6 +90,46 @@ class Icon
     }
 
     /**
+     * @param string $value
+     * @return self
+     * @throws InvalidConfigException
+     */
+    public function rotate($value)
+    {
+        return $this->addCssClass(
+            FontIco::$cssPrefix . '-rotate-' . $value,
+            in_array((string)$value, [
+                FontIco::ROTATE_90,
+                FontIco::ROTATE_180,
+                FontIco::ROTATE_270
+            ], true),
+            sprintf(
+                '%s - invalid value. Use one of the constants: %s.',
+                'FI::rotate()',
+                'FI::ROTATE_90, FI::ROTATE_180, FI::ROTATE_270'
+            )
+        );
+    }
+
+    /**
+     * @param string $value
+     * @return self
+     * @throws InvalidConfigException
+     */
+    public function flip($value)
+    {
+        return $this->addCssClass(
+            FontIco::$cssPrefix . '-flip-' . $value,
+            in_array((string)$value, [FontIco::FLIP_HORIZONTAL, FontIco::FLIP_VERTICAL], true),
+            sprintf(
+                '%s - invalid value. Use one of the constants: %s.',
+                'FI::flip()',
+                'FI::FLIP_HORIZONTAL, FI::FLIP_VERTICAL'
+            )
+        );
+    }
+
+    /**
      * Change html tag.
      * @param string $tag
      * @return static

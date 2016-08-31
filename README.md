@@ -72,9 +72,19 @@ echo FI::icon('arrow-right')->pullLeft();   // <i class="icofont icofont-arrow-r
 echo FI::icon('arrow-right')->pullRight();  // <i class="icofont icofont-arrow-right pull-right"></i>
 
 // icon size
-echo FI::icon('cog')->size(FI::SIZE_3X);
+echo FI::icon('adjust')->size(FI::SIZE_3X);
 // values: FI::SIZE_LARGE, FI::SIZE_2X, FI::SIZE_3X, FI::SIZE_4X, FI::SIZE_5X
-// <i class="icofont icofont-cog icofont-size-3x"></i>
+// <i class="icofont icofont-adjust icofont-size-3x"></i>
+
+// icon rotate
+echo FI::icon('adjust')->rotate(FI::ROTATE_90); 
+// values: FI::ROTATE_90, FI::ROTATE_180, FI::ROTATE_180
+// <i class="icofont icofont-adjust icofont-rotate-90"></i>
+
+// icon flip
+echo FI::icon('adjust')->flip(FI::FLIP_VERTICAL); 
+// values: FI::FLIP_HORIZONTAL, FI::FLIP_VERTICAL
+// <i class="icofont icofont-adjust icofont-flip-vertical"></i>
 
 // autocomplete icons name in IDE
 echo FI::icon(FI::_MAGIC);
