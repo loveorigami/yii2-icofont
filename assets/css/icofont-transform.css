@@ -150,6 +150,31 @@
     filter: none;
 }
 
+.icofont-stack {
+    position: relative;
+    display: inline-block;
+    width: 2em;
+    height: 2em;
+    line-height: 2em;
+    vertical-align: middle;
+}
+
+.icofont-stack-1x,
+.icofont-stack-2x {
+    position: absolute;
+    left: 0;
+    width: 100%;
+    text-align: center;
+}
+
+.icofont-stack-1x {
+    line-height: inherit;
+}
+
+.icofont-stack-2x {
+    font-size: 2em;
+}
+
 .icofont-inverse {
     color: #fff;
 }

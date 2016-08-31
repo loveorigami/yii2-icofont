@@ -73,8 +73,8 @@ echo FA::icon('spinner')->spin();           // <i class="icofont icofont-spinner
 echo FA::icon('home')->fixedWidth();        // <i class="icofont icofont-home icofont-fw"></i>
 echo FA::icon('home')->li();                // <i class="icofont icofont-home icofont-li"></i>
 echo FA::icon('home')->border();            // <i class="icofont icofont-home icofont-border"></i>
-echo FI::icon('arrow-right')->pullLeft();   // <i class="icofont icofont-arrow-right pull-left"></i>
-echo FI::icon('arrow-right')->pullRight();  // <i class="icofont icofont-arrow-right pull-right"></i>
+echo FI::icon('arrow-right')->pullLeft();   // <i class="icofont icofont-arrow-right icofont-pull-left"></i>
+echo FI::icon('arrow-right')->pullRight();  // <i class="icofont icofont-arrow-right icofont-pull-right"></i>
 
 // icon size
 echo FI::icon('adjust')->size(FI::SIZE_3X);
@@ -91,9 +91,38 @@ echo FI::icon('adjust')->flip(FI::FLIP_VERTICAL);
 // values: FI::FLIP_HORIZONTAL, FI::FLIP_VERTICAL
 // <i class="icofont icofont-adjust icofont-flip-vertical"></i>
 
+// icon with multiple methods
+echo FI::icon('home')
+        ->spin()
+        ->fixedWidth()
+        ->pullLeft()
+        ->size(FI::SIZE_LARGE);
+// <i class="icofont icofont-home icofont-spin icofont-fw icofont-pull-left icofont-size-lg"></i>
+
+// icons stack
+echo FI::stack()
+        ->on('square')
+        ->icon('shield');
+// <span class="icofont-stack">
+//   <i class="icofont icofont-shield icofont-stack-2x"></i>
+//   <i class="icofont icofont-square icofont-stack-1x"></i>
+// </span>
+
+// icons stack with additional attributes
+echo FI::stack(['data-role' => 'stacked-icon'])
+     ->on(FI::icon('square')->inverse())
+     ->icon(FI::icon('shield')->spin());
+// <span class="icofont-stack" data-role="stacked-icon">
+//   <i class="icofont icofont-square-o icofont-inverse icofont-stack-2x"></i>
+//   <i class="icofont icofont-cog icofont-spin icofont-stack-1x"></i>
+// </span>
+
 // autocomplete icons name in IDE
 echo FI::icon(FI::_MAGIC);
 echo FI::icon(FI::_ARROW_RIGHT);
+echo FI::stack()
+     ->on(FA::_SQUARE)
+     ->icon(FA::_SHIELD);
 ```
 
 ## See also
