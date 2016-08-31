@@ -68,6 +68,14 @@ class Icon
     /**
      * @return self
      */
+    public function fixedWidth()
+    {
+        return $this->addCssClass(FontIco::$cssPrefix . '-fw');
+    }
+
+    /**
+     * @return self
+     */
     public function pullLeft()
     {
         return $this->addCssClass('pull-left');

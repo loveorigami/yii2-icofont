@@ -21,12 +21,6 @@
     font-size: 5em
 }
 
-.icofont-fw {
-    display: inline-block;
-    width: 1.28571429em;
-    text-align: center
-}
-
 /*Fixed Width Icons*/
 .icofont-fw {
     width: 1.28571429em;
