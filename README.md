@@ -69,6 +69,7 @@ echo Html::submitButton(
 
 // icon with additional methods
 echo FA::icon('arrow-right')->inverse();    // <i class="icofont icofont-arrow-right icofont-inverse"></i>
+echo FA::icon('spinner')->spin();           // <i class="icofont icofont-spinner icofont-spin"></i>
 echo FI::icon('arrow-right')->pullLeft();   // <i class="icofont icofont-arrow-right pull-left"></i>
 echo FI::icon('arrow-right')->pullRight();  // <i class="icofont icofont-arrow-right pull-right"></i>
 

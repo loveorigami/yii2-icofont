@@ -60,6 +60,14 @@ class Icon
     /**
      * @return self
      */
+    public function spin()
+    {
+        return $this->addCssClass(FontIco::$cssPrefix . '-spin');
+    }
+
+    /**
+     * @return self
+     */
     public function pullLeft()
     {
         return $this->addCssClass('pull-left');

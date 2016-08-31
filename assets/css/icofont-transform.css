@@ -53,6 +53,38 @@
 }
 
 /*Animation*/
+.icofont-spin {
+    -webkit-animation: icofont-spin 2s infinite linear;
+    animation: icofont-spin 2s infinite linear;
+}
+
+.icofont-pulse {
+    -webkit-animation: icofont-spin 1s infinite steps(8);
+    animation: icofont-spin 1s infinite steps(8);
+}
+
+@-webkit-keyframes icofont-spin {
+    0% {
+        -webkit-transform: rotate(0deg);
+        transform: rotate(0deg);
+    }
+    100% {
+        -webkit-transform: rotate(359deg);
+        transform: rotate(359deg);
+    }
+}
+
+@keyframes icofont-spin {
+    0% {
+        -webkit-transform: rotate(0deg);
+        transform: rotate(0deg);
+    }
+    100% {
+        -webkit-transform: rotate(359deg);
+        transform: rotate(359deg);
+    }
+}
+
 .icofont-rotate-90 {
     -ms-filter: "progid:DXImageTransform.Microsoft.BasicImage(rotation=1)";
     -webkit-transform: rotate(90deg);
