@@ -76,6 +76,22 @@ class Icon
     /**
      * @return self
      */
+    public function ul()
+    {
+        return $this->addCssClass(FontIco::$cssPrefix . '-ul');
+    }
+
+    /**
+     * @return self
+     */
+    public function li()
+    {
+        return $this->addCssClass(FontIco::$cssPrefix . '-li');
+    }
+
+    /**
+     * @return self
+     */
     public function pullLeft()
     {
         return $this->addCssClass('pull-left');

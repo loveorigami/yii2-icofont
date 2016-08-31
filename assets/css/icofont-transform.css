@@ -46,6 +46,10 @@
     text-align: center;
 }
 
+.icofont-li.icofont-lg {
+    left: -1.85714286em;
+}
+
 /*Animation*/
 .icofont-spin {
     -webkit-animation: icofont-spin 2s infinite linear;
