@@ -68,11 +68,11 @@ echo Html::submitButton(
 ); // <button type="submit"><i class="icofont icofont-check"></i> Save</button>
 
 // icon with additional methods
-echo FA::icon('arrow-right')->inverse();    // <i class="icofont icofont-arrow-right icofont-inverse"></i>
-echo FA::icon('spinner')->spin();           // <i class="icofont icofont-spinner icofont-spin"></i>
-echo FA::icon('home')->fixedWidth();        // <i class="icofont icofont-home icofont-fw"></i>
-echo FA::icon('home')->li();                // <i class="icofont icofont-home icofont-li"></i>
-echo FA::icon('home')->border();            // <i class="icofont icofont-home icofont-border"></i>
+echo FI::icon('arrow-right')->inverse();    // <i class="icofont icofont-arrow-right icofont-inverse"></i>
+echo FI::icon('spinner')->spin();           // <i class="icofont icofont-spinner icofont-spin"></i>
+echo FI::icon('home')->fixedWidth();        // <i class="icofont icofont-home icofont-fw"></i>
+echo FI::icon('home')->li();                // <i class="icofont icofont-home icofont-li"></i>
+echo FI::icon('home')->border();            // <i class="icofont icofont-home icofont-border"></i>
 echo FI::icon('arrow-right')->pullLeft();   // <i class="icofont icofont-arrow-right icofont-pull-left"></i>
 echo FI::icon('arrow-right')->pullRight();  // <i class="icofont icofont-arrow-right icofont-pull-right"></i>
 
@@ -121,8 +121,8 @@ echo FI::stack(['data-role' => 'stacked-icon'])
 echo FI::icon(FI::_MAGIC);
 echo FI::icon(FI::_ARROW_RIGHT);
 echo FI::stack()
-     ->on(FA::_SQUARE)
-     ->icon(FA::_SHIELD);
+     ->on(FI::_SQUARE)
+     ->icon(FI::_SHIELD);
 ```
 
 ## See also
