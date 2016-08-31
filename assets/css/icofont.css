@@ -19,13 +19,9 @@
 
 .icofont {
     display: inline-block;
-    font-family: 'IcoFont' !important;
-    speak: none;
-    font-style: normal;
-    font-weight: normal;
-    font-variant: normal;
-    text-transform: none;
-    line-height: 1;
+    font: normal normal normal 14px/1 'IcoFont';
+    font-size: inherit;
+    text-rendering: auto;
 
     /* Better Font Rendering =========== */
     -webkit-font-smoothing: antialiased;

@@ -52,6 +52,14 @@ class Icon
     /**
      * @return self
      */
+    public function inverse()
+    {
+        return $this->addCssClass(FontIco::$cssPrefix . '-inverse');
+    }
+
+    /**
+     * @return self
+     */
     public function pullLeft()
     {
         return $this->addCssClass('pull-left');
