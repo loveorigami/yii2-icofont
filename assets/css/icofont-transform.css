@@ -50,11 +50,28 @@
     left: -1.85714286em;
 }
 
-/*Pull*/
+/*Border*/
 .icofont-border {
     padding: .2em .25em .15em;
     border: solid 0.08em #eee;
     border-radius: .1em;
+}
+
+/*Pull*/
+.icofont-pull-left {
+    float: left;
+}
+
+.icofont-pull-right {
+    float: right;
+}
+
+.icofont.icofont-pull-left {
+    margin-right: .3em;
+}
+
+.icofont.icofont-pull-right {
+    margin-left: .3em;
 }
 
 /*Animation*/
