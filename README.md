@@ -114,7 +114,16 @@ echo FI::stack(['data-role' => 'stacked-icon'])
      ->icon(FI::icon('shield')->spin());
 // <span class="icofont-stack" data-role="stacked-icon">
 //   <i class="icofont icofont-square-o icofont-inverse icofont-stack-2x"></i>
-//   <i class="icofont icofont-cog icofont-spin icofont-stack-1x"></i>
+//   <i class="icofont icofont-shield icofont-spin icofont-stack-1x"></i>
+// </span>
+
+// unordered list icons 
+echo FI::ul(['data-role' => 'unordered-list'])
+    ->item('spinner', 'Bullet item')
+    ->item('check', 'Checked item');
+// <ul class="icofont-ul" data-role="unordered-list">
+//   <li><i class="icofont icofont-spin icofont-li"></i>Bullet item</li>
+//   <li><i class="icofont icofont-check icofont-li"></i>Checked Item</li>
 // </span>
 
 // autocomplete icons name in IDE
