@@ -122,7 +122,7 @@ echo FI::ul(['data-role' => 'unordered-list'])
     ->item('spinner', 'Bullet item')
     ->item('check', 'Checked item');
 // <ul class="icofont-ul" data-role="unordered-list">
-//   <li><i class="icofont icofont-spin icofont-li"></i>Bullet item</li>
+//   <li><i class="icofont icofont-spinner icofont-li"></i>Bullet item</li>
 //   <li><i class="icofont icofont-check icofont-li"></i>Checked Item</li>
 // </span>
 
