@@ -73,13 +73,6 @@ class Icon
         return $this->addCssClass(FontIco::$cssPrefix . '-fw');
     }
 
-    /**
-     * @return self
-     */
-    public function ul()
-    {
-        return $this->addCssClass(FontIco::$cssPrefix . '-ul');
-    }
 
     /**
      * @return self

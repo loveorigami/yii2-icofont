@@ -8,6 +8,7 @@
 
 namespace lo\icofont\component;
 
+use lo\icofont\FI;
 use yii\base\InvalidConfigException;
 use yii\base\InvalidParamException;
 use yii\helpers\ArrayHelper;
@@ -40,7 +41,7 @@ class Stack
      */
     public function __construct($options = [])
     {
-        Html::addCssClass($options, 'icofont-stack');
+        Html::addCssClass($options, FI::$cssPrefix . '-stack');
         $this->options = $options;
     }
 
@@ -106,10 +107,10 @@ class Stack
         $options = array_merge($this->options, $options);
         $template = ArrayHelper::remove($options, 'template', '{back}{front}');
         $icon_back = $this->icon_back instanceof Icon
-            ? $this->icon_back->addCssClass('icofont-stack-2x')
+            ? $this->icon_back->addCssClass(FI::$cssPrefix . '-stack-2x')
             : null;
         $icon_front = $this->icon_front instanceof Icon
-            ? $this->icon_front->addCssClass('icofont-stack-1x')
+            ? $this->icon_front->addCssClass(FI::$cssPrefix . '-stack-1x')
             : null;
         return Html::tag(
             $tag,
