@@ -68,6 +68,15 @@ class IcoFont
     }
 
     /**
+     * @param array $options
+     * @return component\UnorderedList
+     */
+    public static function ul($options = [])
+    {
+        return new component\UnorderedList($options);
+    }
+
+    /**
      * Size values
      * @see component\Icon::size
      */
