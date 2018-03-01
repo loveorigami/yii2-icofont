@@ -10,7 +10,7 @@ namespace lo\icofont\component;
 
 use lo\icofont\FI;
 use yii\base\InvalidConfigException;
-use yii\base\InvalidParamException;
+use yii\base\InvalidArgumentException;
 use yii\helpers\ArrayHelper;
 use yii\helpers\Html;
 
@@ -85,7 +85,7 @@ class Stack
      * Change html tag.
      * @param string $tag
      * @return static
-     * @throws InvalidParamException
+     * @throws InvalidArgumentException
      */
     public function tag($tag)
     {
